@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目规则初始化"
+  short_description: "初始化通用总则与项目专项规则，保留已有约束并明确缺失配置的处理方式"
+  default_prompt: "使用 $project-rules-init，为当前项目初始化总则与项目专项规则；依据现有项目证据配置适用项，明确不适用项和待配置项。"
