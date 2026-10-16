@@ -1,6 +1,6 @@
 # Project-Specific Rules
 
-> General rules baseline: 1.0.0.
+> General rules baseline: 1.1.0.
 > Binding status: initialization scaffold; complete from project evidence before dependent operations.
 
 Read this file in full with [the general rules](project-rules.md) at project startup. Maintain project-only triggers here. The general rules' Section 0 defines Configured, Not applicable, and Unconfigured; a missing section is Unconfigured and does not disable a general requirement. Replace scaffold statements with evidence-based bindings as the project is inspected. These states describe configuration, not successful verification.
@@ -18,6 +18,10 @@ Read this file in full with [the general rules](project-rules.md) at project sta
 **Configured for startup handover only.** Read `docs/project/handover.md` at task start; reuse the reading while still current. This is the initializer's minimal fallback. During project discovery, prefer an existing designated handover, change this binding to its actual path, and preserve its content.
 
 **Unconfigured for other owners.** Locate existing current requirements, behavior topics, defect evidence, regression scope, and documentation index as needed. Do not generate empty owner documents. When a functional change is ready to commit, resolve its handover and durable information ownership under general Section 4.
+
+## Documentation Ownership and Checks
+
+**Unconfigured.** Identify the project's documentation entry and the maintenance rules it owns, the pending-work tracking document, the archive location, and the documentation check for documentation-only commits: the exact command, its scope, and its acceptance criteria. Documentation-only changes use the checks relevant to their actual impact under general Section 3.1; a missing documentation check is a capability gap, not an exemption. Record which files must be marked historical when plans or records are archived, and keep document-organization evidence in one designated location.
 
 ## Network Access
 

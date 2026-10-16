@@ -5,7 +5,7 @@ description: Initialize or migrate a project to the user's versioned general AI 
 
 # Project Rules Initialization
 
-Create a usable, project-aware rule pair using the bundled 1.0.0 baseline. This skill configures working rules; it does not authorize application implementation, dependency installation, or a release.
+Create a usable, project-aware rule pair using the bundled 1.1.0 baseline. This skill configures working rules; it does not authorize application implementation, dependency installation, or a release.
 
 ## Initialize
 

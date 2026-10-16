@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "sha256": {
-    "project-rules.md": "d9c6f15bf5fff15f0d1f6b77cf4e5c2dd9519de8f72e84ed486851a2799d5fd0",
-    "project-specific-rules.md": "6c630f3011b30138c04197a8e86e44990543e8faec26c2ed461844c43e94a777",
+    "project-rules.md": "100d69637d53a4aa48b7322e9ef14b34c98a2a5f376cfb859f3e561dcf2380d8",
+    "project-specific-rules.md": "f0c2901c29e97b13709d6c6d80e37072d93569f4e2aa17471e2a8c99fe6b0b2f",
     "handover.md": "514b120260efc6dfad52a25c8cbdce5d3fa8f00019bd209b04256174e1b59712",
     "entry.md": "56eb60d2c1fa802e5923fa21a276fa9d94ee4e084b98fde8f8b591633895a957"
   }

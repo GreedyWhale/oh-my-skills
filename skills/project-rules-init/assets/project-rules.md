@@ -1,6 +1,6 @@
 # General AI Coding Rules
 
-> Status: Active. Personal general rules for AI-assisted development. Reusable baseline: 1.0.0.
+> Status: Active. Personal general rules for AI-assisted development. Reusable baseline: 1.1.0.
 
 At the start of work in a project, read this document and the neighboring [project-specific rules](project-specific-rules.md) in full, including all applicability states and task triggers. Reuse that reading while its content and task context remain current; reread changed sections when either changes. Then read the task-relevant references required by the project-specific rules before the corresponding operations. This discovers project-only obligations without requiring every linked document to be read for every task. Project-specific rules supplement these general requirements; they do not replace them.
 
@@ -304,3 +304,23 @@ Before changing high-frequency processing, read the [Performance Constraints sec
 2. When migration is involved, validate the existing-data upgrade paths affected by the change and the required data preservation. Successful creation of an empty store or new data alone does not establish migration correctness. Test scope and execution follow Section 2; commit and build checks follow Section 3.
 
 Before these changes, read the [Persisted Data and Migrations section of the project-specific rules](project-specific-rules.md#persisted-data-and-migrations).
+
+## 13. Documentation Lifecycle and Close-Time Synchronization
+
+### 13.1 Give Each Status One Owner and Synchronize Closures
+
+Give each status one owner: the current work state to the handover, pending and pending-verification states to the project's pending-work tracking document, and each active plan's status to its own plan file. Other documents link to these owners instead of keeping a second copy of a status. A historical marker in an old record, such as a superseded "pending re-verification" note, does not by itself create a current open item.
+
+When work closes, synchronize the affected owners in the same change:
+
+- A closed defect entry keeps only its durable conclusion: the shared expectation or user-visible symptom, the root cause and responsible area, the repair and its regression protection, and the final status with its latest acceptance basis. Process evidence — timings, hashes, retry logs, conversational commentary — stays in commit history or moves to the archive as a referenced file, not in the entry.
+- A plan that is completed, superseded, or abandoned moves to the project's archive area with the reason recorded, and its entry points — navigation, source maps, and the handover — are updated in the same change.
+- A closed task is removed from the handover and pending-work tracking document, leaving only still-active states and their next actions.
+
+A documentation reorganization must not upgrade or auto-close a pending-verification state; only new acceptance evidence changes a status.
+
+### 13.2 Keep Historical Material Clearly Historical and Check Before Committing
+
+Files kept for history, including the archive area, must be marked as historical, must not be maintained as current rule owners, and must not become the only place where a current rule is explained. When such a file moves, fix the references that still depend on it. Keep document-organization evidence — structure decisions, source maps, and acceptance records — in the project's single designated governance location rather than parallel files per round.
+
+Before a documentation-only commit, run the project's designated documentation check for resolvable paths and reachable current documents, as the checks relevant to that change under Section 3.1. Before reorganizing or closing current documents, read the [Documentation Ownership and Checks section of the project-specific rules](project-specific-rules.md#documentation-ownership-and-checks).
