@@ -7,6 +7,7 @@
 | 技能 | 用途 | 版本 |
 |---|---|---|
 | [project-rules-init](skills/project-rules-init/SKILL.md) | 为新项目或已有项目初始化通用 AI 总则与项目专项规则，保留已有约束，区分已配置、不适用和尚未配置的要求 | 1.1.0 |
+| [say-it-plainly](skills/say-it-plainly/SKILL.md) | 把绕口的回答、文档和界面文案改成读者一遍能懂的表达 | 1.0.0 |
 
 ## 安装与使用
 
