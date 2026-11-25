@@ -9,6 +9,7 @@
 | [project-rules-init](skills/project-rules-init/SKILL.md) | 为新项目或已有项目初始化通用 AI 总则与项目专项规则，保留已有约束，区分已配置、不适用和尚未配置的要求 | 1.1.0 |
 | [delegated-collaboration](skills/delegated-collaboration-mode/SKILL.md) | 让协调模型把需求写成可转交给执行模型的指令，并根据执行报告验收 | 1.0 |
 | [say-it-plainly](skills/say-it-plainly/SKILL.md) | 把绕口的回答、文档和界面文案改成读者一遍能懂的表达 | 1.0.0 |
+| [interactive-visual-director](skills/interactive-visual-director/SKILL.md) | 为品牌官网、产品官网和交互体验构思原创视觉，用可观看的作品验证方向，并在开发中保留已获认可的创意 | R2 |
 
 ## 安装与使用
 
